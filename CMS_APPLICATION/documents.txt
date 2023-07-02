@@ -1,0 +1,12 @@
+Version   Python 3.8.10
+
+user : agya@gmail.com  password :123    is a superuser
+
+user: harish@gmail.com password :123456  is a blog_user
+
+
+postmen link:
+
+https://www.postman.com/shailesh49/workspace/mycms/collection/16775725-b06c0af9-aa89-4d7c-8c7c-feca83e3a702?action=share&creator=16775725
+
+Note: postman 
