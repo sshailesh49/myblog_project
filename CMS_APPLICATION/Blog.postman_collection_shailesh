@@ -1,0 +1,628 @@
+{
+	"info": {
+		"_postman_id": "b06c0af9-aa89-4d7c-8c7c-feca83e3a702",
+		"name": "Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16775725",
+		"_collection_link": "https://www.postman.com/shailesh49/workspace/mycms/collection/16775725-b06c0af9-aa89-4d7c-8c7c-feca83e3a702?action=share&creator=16775725&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/user/api/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"first_name\": \"Harish1\",\r\n        \"phone\": \"9999990000\",\r\n        \"email\": \"harish1@gmail.com\",\r\n        \"password\":\"123456\"\r\n       \r\n        \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/user/api/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"api",
+						""
+					]
+				},
+				"description": "Blog User create Api,  only four value to be given name,email,password,phone .\r\n other default value will be set - \r\n ."
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/user/api/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "harish@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/user/api/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"api",
+						""
+					]
+				},
+				"description": "Blog user can see only his own details.\r\nSuperuser can see all users details \r\nNote- Can create superhit with command -python manage.py createsuperuser  only"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/user/api/11/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "agya@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/user/api/11/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"api",
+						"11",
+						""
+					]
+				},
+				"description": "Single Record retrieve ;\n\nStartFragment\n\nBlog user can see only his own details.  \nSuperuser can see any users details  \nNote- Can create superhit with command -python manage.py createsuperuser only\n\nEndFragment"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/user/api/16/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "agya@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n        \r\n      {\r\n    \r\n        \"first_name\": \"Harish Kumar verma\",\r\n        \"phone\": \"999999110\",\r\n        \"email\": \"harish@gmail.com\",\r\n        \"is_active\": true\r\n    }\r\n        \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/user/api/16/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"api",
+						"16",
+						""
+					]
+				},
+				"description": "StartFragment\n\nBlog user can update only his own details.  \nSuperuser can update any users details  \nNote- Can create superhit with command -python manage.py createsuperuser only"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/user/api/11/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "harish@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/user/api/11/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"api",
+						"11",
+						""
+					]
+				},
+				"description": "Blog user can Delete only his own account.other user can not delete another user account\r\n\r\nSuperuser can delete any users account\r\nNote- Can create superhit with command -python manage.py createsuperuser only"
+			},
+			"response": []
+		},
+		{
+			"name": " BlogAPI POST http://127.0.0.1:8000/blog/api/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "harish@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\r\n        \"title\": \"My fourth Blog\",\r\n        \"description\": \"The Texas Ethics Commission ruled this week that the San Antonio police union’s \",\r\n        \"content\": \"News\"\r\n    \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/api/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"api",
+						""
+					]
+				},
+				"description": "Blog user can create only his own blog."
+			},
+			"response": []
+		},
+		{
+			"name": " BlogAPI GET http://127.0.0.1:8000/blog/api/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "harish@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/api/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"api",
+						""
+					]
+				},
+				"description": "Any user can access public and active blogs with likes only.\r\nOwner user  access  all Blog with likes which are created_by Self and Other user's public and active blogs wuth likes only.\r\n\r\n        "
+			},
+			"response": []
+		},
+		{
+			"name": "BlogAPI Single GET http://127.0.0.1:8000/blog/api/17/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "harish@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/api/17/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"api",
+						"17",
+						""
+					]
+				},
+				"description": "Any user can access public and active single blog only.\r\n        Owner user  access  single record which are created_by Self and Other user's public and active  single blog only."
+			},
+			"response": []
+		},
+		{
+			"name": "BlogAPI  PUT http://127.0.0.1:8000/blog/api/18/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "harish@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  { \"title\": \"My News1 Blog\",\r\n        \"description\": \"The india Commission ruled this week that bhopal police union’s\",\r\n        \"content\": \"News india\",\r\n\r\n        \"is_private\": false\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/api/18/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"api",
+						"18",
+						""
+					]
+				},
+				"description": "Blog user can update only own blogs"
+			},
+			"response": []
+		},
+		{
+			"name": "BlogAPI Deleted http://127.0.0.1:8000/blog/api/17/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "harish@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/api/17/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"api",
+						"17",
+						""
+					]
+				},
+				"description": " A superuser can delete any Blog \r\n but Owner (created_by) can delete self created blog."
+			},
+			"response": []
+		},
+		{
+			"name": " LikeAPI GET http://127.0.0.1:8000/blog/like/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "agya@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/like/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"like",
+						""
+					]
+				},
+				"description": "only Owner(created_by) can access his like list."
+			},
+			"response": []
+		},
+		{
+			"name": "ListAPI POST http://127.0.0.1:8000/blog/like/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "harish@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n       \r\n        \"like\": true,\r\n        \"blog\": 18\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/like/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"like",
+						""
+					]
+				},
+				"description": "only access Authenticated user\r\nand blog user can like  each post one time ."
+			},
+			"response": []
+		},
+		{
+			"name": "LikeAPI PUT http://127.0.0.1:8000/blog/like/18/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "harish@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"like\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/like/18/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"like",
+						"18",
+						""
+					]
+				},
+				"description": "like can update only owner(created_by)\r\nand change  like  state True/False"
+			},
+			"response": []
+		},
+		{
+			"name": " LikeAPI Delete http://127.0.0.1:8000/blog/like/20/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "agya@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/like/20/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"like",
+						"20",
+						""
+					]
+				},
+				"description": "Delete likes only Blog Owner (created_by ) not like Owner (created_by ).\r\n\r\n"
+			},
+			"response": []
+		}
+	]
+}
